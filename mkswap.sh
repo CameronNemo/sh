@@ -25,6 +25,8 @@ test -z "$swap_size" && swap_size="$(get_ram_size)"
 
 dd if=/dev/zero of=/swapfile bs=1024 count="$swap_size"
 
+chmod 600 /swapfile
+
 mkswap /swapfile
 
 swapon /swapfile
