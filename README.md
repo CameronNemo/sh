@@ -13,14 +13,23 @@ Installing:
 Invocation:
 
     apt.minimize.sh
+    debian.minimize.sh
     mkswap.sh
     flashcards.sh
 
 ## apt.minimize.sh
 
+a tool to decrease the footprint of an apt/dpkg installation
+
 removes apt/dpkg related files that can be redownloaded and are thus extraneous
 
 used in debian family containers to cut down on disk space usage
+
+## debian.minimize.sh
+
+removes documentation and locale files on a debian system
+
+optionally excludes the locale specified in `/etc/default/locale` or `/etc/locale.gen` (with the `$LANG` variable)
 
 ## mkswap.sh
 
