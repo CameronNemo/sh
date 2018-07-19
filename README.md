@@ -17,6 +17,7 @@ Invocation:
     mkswap.sh
     flashcards.sh
     xhost.root.sh [off]
+    xdg.rundir.sh USER
 
 ## apt.minimize.sh
 
@@ -50,3 +51,7 @@ At the end, it tells you how many rounds it took to get through the entire list.
 ## xhost.root.sh
 
 This will allow root applications to run on XWayland (e.g. gparted). It sets access control lists to permit local root users. Invoking the program with the `off` argument will undo the ACL change.
+
+## xdg.rundir.sh
+
+Creates an `$XDG_RUNTIME_DIR` (tmpfs) for the user specified by the mandatory argument, `USER`, with the pattern `/run/user/$UID/`.
