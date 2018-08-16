@@ -1,6 +1,6 @@
 # sh
 
-MOVED TO GITLAB -> gitlab.com/CameronNemo/sh
+MOVED TO GITLAB -> https://gitlab.com/CameronNemo/sh
 
 shell scripts: routine operations, useful utilities, and a flashcard game
 
